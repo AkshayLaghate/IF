@@ -1,0 +1,10 @@
+/app/src/main/java/com/indcoders/instafile/MainActivity.java
+/app/build.gradle
+*.iml
+.gradle
+/local.properties
+/.idea/workspace.xml
+/.idea/libraries
+.DS_Store
+/build
+/captures
