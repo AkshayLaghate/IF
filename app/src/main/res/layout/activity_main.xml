@@ -29,6 +29,59 @@
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|end"
         android:layout_margin="@dimen/fab_margin"
-        android:src="@drawable/ic_cloud_upload_white_48dp" />
+        android:src="@drawable/ic_add_white_48dp"
+        android:visibility="gone" />
+
+    <com.indcoders.instafile.Fab
+        android:id="@+id/fab1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        android:src="@drawable/ic_add_white_48dp" />
+
+    <!-- Overlay that dims the screen -->
+    <com.gordonwong.materialsheetfab.DimOverlayFrameLayout
+        android:id="@+id/overlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!-- Circular reveal container for the sheet -->
+    <io.codetail.widget.RevealLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="end|bottom"
+        android:orientation="vertical">
+
+        <!-- Sheet that contains your items -->
+        <android.support.v7.widget.CardView
+            android:id="@+id/fab_sheet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <!-- TODO: Put your sheet items here -->
+            <!-- <include layout="@layout/multi_file_dialog" /> -->
+            <!-- Sheet items -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/fabItemSingle"
+                    style="@style/TextAppearance.MaterialSheetFab.Sheet.Item"
+
+                    android:text="@string/single" />
+
+                <TextView
+                    android:id="@+id/fabItemMulti"
+                    style="@style/TextAppearance.MaterialSheetFab.Sheet.Item"
+
+                    android:text="@string/Multi" />
+                <!-- Sheet items -->
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+    </io.codetail.widget.RevealLinearLayout>
 
 </android.support.design.widget.CoordinatorLayout>

@@ -3,4 +3,6 @@
     <string name="action_settings">Settings</string>
     <string name="add_message">Click \'+\' to upload a file.</string>
     <string name="activity_title">My Files</string>
+    <string name="single">Single File</string>
+    <string name="Multi">Multiple Files</string>
 </resources>
